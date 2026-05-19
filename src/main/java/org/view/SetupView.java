@@ -26,7 +26,7 @@ public class SetupView extends JFrame {
         JTextField widthField  = new JTextField("20", 5);
         JTextField heightField = new JTextField("20", 5);
 
-        JLabel probLabel     = new JLabel("Probabilité de propagation :");
+        JLabel probLabel     = new JLabel("Probabilite de propagation :");
         JSlider probSlider   = new JSlider(0, 100, 50);
         JLabel probValue     = new JLabel("0.50");
 
@@ -71,7 +71,7 @@ public class SetupView extends JFrame {
                 view.setVisible(true);
                 this.setVisible(false);
 
-            } catch (NumberFormatException _) {
+            } catch (NumberFormatException err) {
                 JOptionPane.showMessageDialog(this, "Veuillez entrer des nombres valides.");
             }
         });

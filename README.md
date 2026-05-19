@@ -30,7 +30,8 @@ forest-fire-simulation/
 │
 ├── src/main/java/
 │   ├── org/
-│   │   ├── Main.java            # Point d'entrée
+│   │   ├── main
+│   │   │   └── Main.java        # Point d'entrée
 │   │   │
 │   │   ├── models/
 │   │   │   ├── CellState.java   # Enum : TREE, BURNING, ASH
@@ -66,8 +67,8 @@ forest-fire-simulation/
 ### Depuis le terminal
 
 ```bash
-mvn compile
-mvn exec:java -Dexec.mainClass="org.Main"
+javac -d out src\main\java\org\main\Main.java src\main\java\org\models\*.java src\main\java\org\simulation\*.java src\main\java\org\view\*.java
+java -cp out org.main.Main 
 ```
 
 ---

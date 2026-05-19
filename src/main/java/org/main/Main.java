@@ -8,7 +8,7 @@
 
         private Main(){}
 
-        static void main() {
+        public static void main(String[] args){
                 SwingUtilities.invokeLater(() ->
                     new SetupView().setVisible(true)
                 );
